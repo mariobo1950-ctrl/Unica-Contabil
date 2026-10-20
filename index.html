@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unica Contábil | Escritório de Contabilidade em Goiânia - GO</title>
+
+<!-- SEO / Google Ads -->
+<meta name="description" content="Escritório de Contabilidade em Goiânia há mais de 20 anos. Abertura de empresa, contabilidade mensal, folha de pagamento, impostos e consultoria. Fale com a Unica Contábil: (62) 3212-1200.">
+<meta name="keywords" content="contabilidade goiânia, escritório de contabilidade, contador goiânia, abertura de empresa, impostos, folha de pagamento, unica contabil">
+<meta name="author" content="Unica Contabil S/S LTDA">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Unica Contábil | Escritório de Contabilidade em Goiânia">
+<meta property="og:description" content="Contabilidade completa para empresas e profissionais liberais. Atendimento humano, tecnologia e preço justo.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://contabilizario.com.br/wp-content/uploads/2024/06/A-importancia-da-contabilidade-para-a-saude-financeira-das-empresas-1-2048x1170.jpg.webp">
+
+<!-- Bootstrap 5 + Ícones -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0B2545;
+    --navy-2:#123262;
+    --gold:#F2B705;
+    --gold-2:#FFC93C;
+    --teal:#0E9594;
+    --soft:#F4F7FB;
+    --text:#1C2A3A;
+  }
+  *{scroll-behavior:smooth;}
+  body{
+    font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+    color:var(--text);
+    background:#fff;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,h5{font-weight:800;letter-spacing:-.02em;}
+  .text-gold{color:var(--gold)!important;}
+  .bg-soft{background:var(--soft);}
+  .bg-navy{background:var(--navy);}
+
+  /* ---------- NAVBAR ---------- */
+  .navbar{
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(12px);
+    transition:.3s;
+    padding:.9rem 0;
+  }
+  .navbar.scrolled{box-shadow:0 8px 30px rgba(11,37,69,.10);padding:.55rem 0;}
+  .navbar-brand{font-weight:800;font-size:1.3rem;color:var(--navy);}
+  .navbar-brand span{color:var(--gold);}
+  .brand-icon{
+    width:40px;height:40px;border-radius:12px;
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));
+    display:inline-flex;align-items:center;justify-content:center;
+    color:var(--gold);font-size:1.15rem;margin-right:.55rem;
+  }
+  .navbar .nav-link{font-weight:600;color:var(--navy);margin:0 .35rem;position:relative;}
+  .navbar .nav-link::after{
+    content:"";position:absolute;left:0;bottom:2px;height:3px;width:0;
+    background:var(--gold);border-radius:3px;transition:.3s;
+  }
+  .navbar .nav-link:hover::after{width:100%;}
+
+  /* ---------- BOTÕES ---------- */
+  .btn{font-weight:700;border-radius:50px;padding:.75rem 1.6rem;transition:.25s;}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--navy);border:none;box-shadow:0 10px 24px rgba(242,183,5,.35);}
+  .btn-gold:hover{transform:translateY(-3px);color:var(--navy);box-shadow:0 16px 32px rgba(242,183,5,.45);}
+  .btn-navy{background:var(--navy);color:#fff;border:none;}
+  .btn-navy:hover{background:var(--navy-2);color:#fff;transform:translateY(-3px);}
+  .btn-outline-light-2{border:2px solid rgba(255,255,255,.55);color:#fff;background:transparent;}
+  .btn-outline-light-2:hover{background:#fff;color:var(--navy);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(1000px 500px at 85% 0%, rgba(14,149,148,.28), transparent 60%),
+      radial-gradient(800px 500px at 0% 100%, rgba(242,183,5,.18), transparent 60%),
+      linear-gradient(135deg,#0B2545 0%, #123262 55%, #0E3B5C 100%);
+    color:#fff;
+    padding:150px 0 110px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px);
+    background-size:26px 26px;
+    opacity:.55;
+  }
+  .hero .container{position:relative;z-index:2;}
+  .badge-soft{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.22);
+    color:#fff;padding:.5rem 1rem;border-radius:50px;
+    font-size:.85rem;font-weight:600;backdrop-filter:blur(6px);
+  }
+  .hero h1{font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1.1;}
+  .hero p.lead{color:rgba(255,255,255,.82);font-size:1.08rem;max-width:560px;}
+  .hero-img-wrap{
+    position:relative;border-radius:26px;overflow:hidden;
+    box-shadow:0 40px 80px rgba(0,0,0,.45);
+    border:6px solid rgba(255,255,255,.12);
+  }
+  .hero-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+  .float-card{
+    position:absolute;background:#fff;color:var(--navy);
+    border-radius:16px;padding:.85rem 1.1rem;
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+    display:flex;align-items:center;gap:.7rem;font-weight:700;font-size:.9rem;
+    animation:floaty 4s ease-in-out infinite;
+  }
+  .float-card i{font-size:1.4rem;color:var(--teal);}
+  .fc-1{bottom:-18px;left:-14px;}
+  .fc-2{top:-18px;right:-10px;animation-delay:1.4s;}
+  .fc-2 i{color:var(--gold);}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+  /* ---------- FAIXA DE CONFIANÇA ---------- */
+  .trust-strip{background:var(--navy);color:#fff;padding:1.6rem 0;}
+  .trust-item{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.95rem;}
+  .trust-item i{font-size:1.4rem;color:var(--gold);}
+
+  /* ---------- SEÇÕES ---------- */
+  .section{padding:95px 0;}
+  .section-tag{
+    display:inline-block;background:rgba(14,149,148,.12);color:var(--teal);
+    font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    padding:.45rem 1rem;border-radius:50px;margin-bottom:1rem;
+  }
+  .section-title{font-size:clamp(1.8rem,3.2vw,2.6rem);margin-bottom:1rem;}
+  .section-sub{color:#5A6B7D;font-size:1.03rem;max-width:680px;}
+
+  /* ---------- CARDS DE SERVIÇO ---------- */
+  .service-card{
+    background:#fff;border:1px solid #E8EEF6;border-radius:20px;
+    padding:2rem 1.6rem;height:100%;transition:.3s;position:relative;overflow:hidden;
+  }
+  .service-card::after{
+    content:"";position:absolute;left:0;top:0;height:4px;width:0;
+    background:linear-gradient(90deg,var(--gold),var(--teal));transition:.4s;
+  }
+  .service-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(11,37,69,.12);border-color:transparent;}
+  .service-card:hover::after{width:100%;}
+  .service-icon{
+    width:60px;height:60px;border-radius:16px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.6rem;margin-bottom:1.1rem;
+    background:linear-gradient(135deg,rgba(14,149,148,.14),rgba(242,183,5,.18));
+    color:var(--navy);
+  }
+  .service-card h3{font-size:1.1rem;margin-bottom:.6rem;}
+  .service-card p{color:#5A6B7D;font-size:.94rem;margin-bottom:0;}
+
+  /* ---------- NÚMEROS ---------- */
+  .stat-box{text-align:center;padding:1.4rem .6rem;}
+  .stat-box .num{font-size:2.4rem;font-weight:800;color:var(--navy);line-height:1;}
+  .stat-box .lbl{color:#5A6B7D;font-size:.9rem;font-weight:600;margin-top:.5rem;}
+
+  /* ---------- SOBRE ---------- */
+  .about-img{
+    border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(11,37,69,.18);
+    position:relative;
+  }
+  .about-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  .check-list li{display:flex;gap:.7rem;align-items:flex-start;margin-bottom:.8rem;font-weight:600;color:#33475B;}
+  .check-list i{color:var(--teal);font-size:1.15rem;margin-top:2px;}
+
+  /* ---------- GALERIA / DICAS ---------- */
+  .tip-card{
+    border-radius:20px;overflow:hidden;background:#fff;
+    border:1px solid #E8EEF6;transition:.3s;height:100%;
+  }
+  .tip-card:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(11,37,69,.14);}
+  .tip-card img{width:100%;height:190px;object-fit:cover;transition:.5s;}
+  .tip-card:hover img{transform:scale(1.07);}
+  .tip-body{padding:1.3rem;}
+  .tip-body h4{font-size:1.02rem;margin-bottom:.5rem;}
+  .tip-body p{font-size:.9rem;color:#5A6B7D;margin:0;}
+
+  /* ---------- DEPOIMENTOS ---------- */
+  .review-summary{
+    background:#fff;border-radius:20px;padding:1.6rem;border:1px solid #E8EEF6;
+    text-align:center;box-shadow:0 14px 34px rgba(11,37,69,.06);
+  }
+  .review-score{font-size:3rem;font-weight:800;color:var(--navy);line-height:1;}
+  .stars{color:var(--gold);font-size:1.05rem;letter-spacing:2px;}
+  .review-card{
+    background:#fff;border:1px solid #E8EEF6;border-radius:20px;
+    padding:1.7rem;height:100%;transition:.3s;position:relative;
+  }
+  .review-card:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(11,37,69,.12);}
+  .review-card .quote{
+    position:absolute;top:1rem;right:1.4rem;font-size:2.4rem;color:rgba(242,183,5,.28);
+  }
+  .avatar{
+    width:48px;height:48px;border-radius:50%;
+    background:linear-gradient(135deg,var(--navy),var(--teal));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:1rem;flex:0 0 auto;
+  }
+  .review-card p{color:#4A5C6E;font-size:.95rem;margin:1rem 0 .2rem;}
+
+  /* ---------- CTA ---------- */
+  .cta-band{
+    background:linear-gradient(135deg,var(--navy),#123262 60%,#0E3B5C);
+    border-radius:28px;color:#fff;padding:3.2rem 2.4rem;position:relative;overflow:hidden;
+  }
+  .cta-band::before{
+    content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(242,183,5,.35),transparent 70%);
+    top:-120px;right:-80px;
+  }
+  .cta-band > *{position:relative;z-index:2;}
+
+  /* ---------- CONTATO ---------- */
+  .contact-card{
+    background:#fff;border:1px solid #E8EEF6;border-radius:20px;padding:1.6rem;
+    height:100%;transition:.3s;
+  }
+  .contact-card:hover{box-shadow:0 20px 45px rgba(11,37,69,.12);transform:translateY(-5px);}
+  .contact-card .ico{
+    width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--navy),var(--navy-2));color:var(--gold);font-size:1.3rem;
+    margin-bottom:1rem;
+  }
+  .contact-card a{color:var(--navy);font-weight:700;text-decoration:none;word-break:break-word;}
+  .contact-card a:hover{color:var(--teal);}
+  .contact-card p{color:#5A6B7D;font-size:.93rem;margin-bottom:.25rem;}
+  .form-control{border-radius:12px;padding:.8rem 1rem;border:1px solid #DCE5F0;}
+  .form-control:focus{border-color:var(--teal);box-shadow:0 0 0 .2rem rgba(14,149,148,.15);}
+  .form-label{font-weight:700;font-size:.88rem;color:var(--navy);}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy);color:rgba(255,255,255,.72);padding:70px 0 0;}
+  footer h5{color:#fff;font-size:1rem;margin-bottom:1.1rem;}
+  footer a{color:rgba(255,255,255,.72);text-decoration:none;transition:.2s;}
+  footer a:hover{color:var(--gold);}
+  footer ul{list-style:none;padding:0;}
+  footer ul li{margin-bottom:.55rem;font-size:.92rem;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding:1.4rem 0;font-size:.85rem;}
+  .cnpj-badge{
+    display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+    padding:.35rem .85rem;border-radius:50px;font-size:.8rem;color:#fff;font-weight:600;
+  }
+
+  /* ---------- WHATSAPP FLUTUANTE ---------- */
+  .wa-float{
+    position:fixed;bottom:22px;right:22px;z-index:1050;
+    width:60px;height:60px;border-radius:50%;
+    background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:1.8rem;box-shadow:0 12px 28px rgba(37,211,102,.45);
+    text-decoration:none;transition:.25s;
+  }
+  .wa-float:hover{transform:scale(1.1);color:#fff;}
+
+  /* ---------- MODAIS ---------- */
+  .modal-content{border-radius:20px;border:none;}
+  .modal-header{background:var(--navy);color:#fff;border-radius:20px 20px 0 0;padding:1.3rem 1.6rem;}
+  .modal-header .btn-close{filter:invert(1) grayscale(1) brightness(2);}
+  .modal-body{padding:1.8rem;max-height:65vh;overflow-y:auto;font-size:.94rem;color:#3E5063;line-height:1.7;}
+  .modal-body h6{color:var(--navy);font-weight:800;margin-top:1.4rem;margin-bottom:.5rem;font-size:.98rem;}
+  .modal-body h6:first-child{margin-top:0;}
+  .modal-body ul{padding-left:1.2rem;}
+  .modal-body li{margin-bottom:.4rem;}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1);}
+  .reveal.visible{opacity:1;transform:none;}
+
+  @media (max-width:991px){
+    .hero{padding:130px 0 80px;text-align:center;}
+    .hero p.lead{margin-left:auto;margin-right:auto;}
+    .float-card{display:none;}
+    .section{padding:65px 0;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#top">
+      <span class="brand-icon"><i class="bi bi-calculator-fill"></i></span>
+      Unica<span>Contábil</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-2" style="color:var(--navy)"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dicas">Conteúdos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#avaliacoes">Avaliações</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a class="btn btn-gold" href="tel:+556232121200">
+            <i class="bi bi-telephone-fill me-2"></i>(62) 3212-1200
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="badge-soft mb-3">
+          <i class="bi bi-patch-check-fill text-warning"></i> Contabilidade em Goiânia desde 2003
+        </span>
+        <h1 class="mb-3">
+          Sua empresa em boas mãos:<br>
+          <span class="text-gold">contabilidade</span> simples, segura e sem sustos.
+        </h1>
+        <p class="lead mb-4">
+          A <strong>Unica Contábil</strong> cuida da contabilidade, dos impostos e da folha de pagamento
+          da sua empresa com atendimento humano e tecnologia de ponta. Você foca no negócio,
+          nós cuidamos dos números.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center">
+          <a href="#contato" class="btn btn-gold btn-lg">
+            <i class="bi bi-chat-dots-fill me-2"></i>Solicitar orçamento grátis
+          </a>
+          <a href="#servicos" class="btn btn-outline-light-2 btn-lg">
+            Ver serviços <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="d-flex flex-wrap gap-4 mt-4 pt-2 justify-content-lg-start justify-content-center">
+          <div class="trust-item"><i class="bi bi-shield-check"></i> 100% dentro da lei</div>
+          <div class="trust-item"><i class="bi bi-clock-history"></i> Resposta em até 24h</div>
+          <div class="trust-item"><i class="bi bi-people-fill"></i> +500 clientes ativos</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-img-wrap">
+          <img src="https://contabilizario.com.br/wp-content/uploads/2024/06/A-importancia-da-contabilidade-para-a-saude-financeira-das-empresas-1-2048x1170.jpg.webp"
+               alt="Consultoria contábil e saúde financeira das empresas - Unica Contábil Goiânia">
+          <div class="float-card fc-1">
+            <i class="bi bi-graph-up-arrow"></i>
+            <div>
+              <div style="font-size:.72rem;color:#7A8CA0;font-weight:600">Gestão financeira</div>
+              Empresa saudável
+            </div>
+          </div>
+          <div class="float-card fc-2">
+            <i class="bi bi-file-earmark-check-fill"></i>
+            <div>
+              <div style="font-size:.72rem;color:#7A8CA0;font-weight:600">Obrigações em dia</div>
+              Zero multas
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== FAIXA DE CONFIANÇA ==================== -->
+<section class="trust-strip">
+  <div class="container">
+    <div class="row g-3 text-center text-lg-start">
+      <div class="col-lg-3 col-6"><div class="trust-item justify-content-center justify-content-lg-start"><i class="bi bi-award-fill"></i> Contadores registrados no CRC</div></div>
+      <div class="col-lg-3 col-6"><div class="trust-item justify-content-center justify-content-lg-start"><i class="bi bi-laptop"></i> Atendimento 100% digital</div></div>
+      <div class="col-lg-3 col-6"><div class="trust-item justify-content-center justify-content-lg-start"><i class="bi bi-lock-fill"></i> Dados protegidos (LGPD)</div></div>
+      <div class="col-lg-3 col-6"><div class="trust-item justify-content-center justify-content-lg-start"><i class="bi bi-headset"></i> Suporte por WhatsApp</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVIÇOS ==================== -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Nossos serviços</span>
+      <h2 class="section-title">Tudo o que sua empresa precisa<br class="d-none d-md-block"> em um só lugar</h2>
+      <p class="section-sub mx-auto">
+        Da abertura do CNPJ à entrega das obrigações acessórias, a Unica Contábil acompanha
+        cada etapa do seu negócio com transparência e preço justo.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-building-add"></i></div>
+          <h3>Abertura, alteração e baixa de empresa</h3>
+          <p>Constituição de MEI, ME, LTDA e demais naturezas jurídicas, alterações contratuais e encerramento regular junto aos órgãos competentes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-journal-check"></i></div>
+          <h3>Contabilidade mensal</h3>
+          <p>Escrituração contábil e fiscal completa, balancetes, demonstrativos e relatórios gerenciais claros para você entender os números do seu negócio.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-receipt-cutoff"></i></div>
+          <h3>Apuração de impostos</h3>
+          <p>Cálculo de Simples Nacional, Lucro Presumido e Lucro Real, com planejamento tributário para reduzir legalmente a carga de tributos.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-people-fill"></i></div>
+          <h3>Departamento pessoal</h3>
+          <p>Folha de pagamento, admissões, rescisões, férias, 13º salário, eSocial, FGTS e INSS — tudo em dia e sem dor de cabeça.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-pie-chart-fill"></i></div>
+          <h3>Consultoria e planejamento</h3>
+          <p>Análise de viabilidade, formação de preço, fluxo de caixa e orientação estratégica para decisões mais seguras e lucrativas.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+          <h3>IRPF e declarações</h3>
+          <p>Declaração de Imposto de Renda Pessoa Física e Jurídica, DEFIS, DCTFWeb, ECD, ECF e demais obrigações acessórias.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 reveal">
+      <a href="#contato" class="btn btn-navy btn-lg">
+        <i class="bi bi-whatsapp me-2"></i>Falar com um contador agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NÚMEROS ==================== -->
+<section class="py-5 bg-soft">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3 reveal"><div class="stat-box"><div class="num" data-count="20">0</div><div class="lbl">Anos de experiência</div></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="stat-box"><div class="num" data-count="500">0</div><div class="lbl">Empresas atendidas</div></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="stat-box"><div class="num" data-count="98">0</div><div class="lbl">% de satisfação</div></div></div>
+      <div class="col-6 col-lg-3 reveal"><div class="stat-box"><div class="num" data-count="24">0</div><div class="lbl">Horas de resposta</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SOBRE ==================== -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="about-img">
+          <img src="https://contabilizario.com.br/wp-content/uploads/2026/06/contabilidade-para-prestadores-de-servico-no-rio-de-janeiro-1-1.jpg.webp"
+               alt="Equipe de contabilidade para prestadores de serviço - Unica Contábil">
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <span class="section-tag">Sobre nós</span>
+        <h2 class="section-title">Unica Contábil: gente que entende de gente e de números</h2>
+        <p class="section-sub mb-4">
+          Somos um escritório de contabilidade sediado em <strong>Goiânia – GO</strong>, no Setor Bueno,
+          com atuação em todo o Brasil. Nascemos com uma ideia simples: tirar a contabilidade
+          do papel de “obrigação chata” e transformá-la em uma ferramenta de crescimento para
+          pequenas e médias empresas, profissionais liberais e empreendedores digitais.
+        </p>
+        <ul class="check-list list-unstyled mb-4">
+          <li><i class="bi bi-check-circle-fill"></i> Atendimento próximo, com contador responsável pelo seu caso</li>
+          <li><i class="bi bi-check-circle-fill"></i> Plataforma digital para envio de documentos e consulta de guias</li>
+          <li><i class="bi bi-check-circle-fill"></i> Honorários transparentes, sem taxas escondidas</li>
+          <li><i class="bi bi-check-circle-fill"></i> Especialistas em Simples Nacional e prestadores de serviço</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#contato" class="btn btn-gold"><i class="bi bi-envelope-fill me-2"></i>Fale conosco</a>
+          <a href="#avaliacoes" class="btn btn-outline-dark rounded-pill px-4"><i class="bi bi-star-fill me-2 text-warning"></i>Ver avaliações</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTEÚDOS / DICAS ==================== -->
+<section class="section bg-soft" id="dicas">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Conteúdos</span>
+      <h2 class="section-title">Informação de qualidade para o seu negócio</h2>
+      <p class="section-sub mx-auto">
+        Selecionamos temas que impactam diretamente a rotina de quem empreende.
+        Precisa de orientação sobre algum deles? Nossa equipe está à disposição.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="tip-card">
+          <img src="https://contabilizario.com.br/wp-content/uploads/2026/06/quais-impostos-uma-empresa-paga-guia-completo-para-iniciantes.jpg.webp"
+               alt="Guia completo de impostos que uma empresa paga">
+          <div class="tip-body">
+            <h4>Quais impostos uma empresa paga?</h4>
+            <p>Guia completo para iniciantes entenderem a tributação do negócio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="tip-card">
+          <img src="https://contabilizario.com.br/wp-content/uploads/2021/10/Quando-utilizar-a-nota-promissoria.jpg.webp"
+               alt="Quando utilizar a nota promissória">
+          <div class="tip-body">
+            <h4>Nota promissória: quando usar?</h4>
+            <p>Saiba como formalizar dívidas e recebíveis com segurança jurídica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="tip-card">
+          <img src="https://contabilizario.com.br/wp-content/uploads/2021/10/empreendedorismo-digital-2.jpg.webp"
+               alt="Empreendedorismo digital e contabilidade">
+          <div class="tip-body">
+            <h4>Empreendedorismo digital</h4>
+            <p>Como regularizar sua operação online e crescer com tranquilidade.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="tip-card">
+          <img src="https://senhorcontabil.com.br/wp-content/uploads/2024/09/contabilidade-para-profissionais-liberais.webp"
+               alt="Contabilidade para profissionais liberais">
+          <div class="tip-body">
+            <h4>Profissionais liberais</h4>
+            <p>Contabilidade específica para quem vive de serviços e honorários.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== AVALIAÇÕES ==================== -->
+<section class="section" id="avaliacoes">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Avaliação de clientes</span>
+      <h2 class="section-title">Quem confia na Unica Contábil</h2>
+      <p class="section-sub mx-auto">
+        A satisfação dos nossos clientes é o nosso melhor indicador. Veja o que dizem
+        empresas e profissionais que atendemos todos os dias.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-3 reveal">
+        <div class="review-summary h-100 d-flex flex-column justify-content-center">
+          <div class="review-score">4,9</div>
+          <div class="stars my-2">★★★★★</div>
+          <div class="fw-bold" style="color:var(--navy)">Excelente</div>
+          <p class="mb-0 mt-2" style="font-size:.87rem;color:#5A6B7D">
+            Baseado na avaliação de <strong>+180 clientes</strong> atendidos nos últimos anos.
+          </p>
+          <hr class="my-3">
+          <div class="text-start" style="font-size:.82rem;color:#5A6B7D">
+            <div class="d-flex justify-content-between mb-1"><span>Atendimento</span><span>5,0 ★</span></div>
+            <div class="d-flex justify-content-between mb-1"><span>Agilidade</span><span>4,9 ★</span></div>
+            <div class="d-flex justify-content-between"><span>Preço justo</span><span>4,8 ★</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="row g-4">
+          <div class="col-md-6 reveal">
+            <div class="review-card">
+              <i class="bi bi-quote quote"></i>
+              <div class="stars">★★★★★</div>
+              <p>“Mudei minha empresa para a Unica Contábil há três anos e nunca mais tive problema com guia atrasada. O atendimento é rápido e explicam tudo de um jeito que a gente entende.”</p>
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <div class="avatar">RM</div>
+                <div>
+                  <div class="fw-bold" style="color:var(--navy);font-size:.92rem">Ricardo M.</div>
+                  <div style="font-size:.8rem;color:#7A8CA0">Comércio • Goiânia/GO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="review-card">
+              <i class="bi bi-quote quote"></i>
+              <div class="stars">★★★★★</div>
+              <p>“Abri meu CNPJ com eles e recebi orientação sobre o regime tributário certo para o meu negócio. Economizei imposto já no primeiro ano. Recomendo de olhos fechados.”</p>
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <div class="avatar">AL</div>
+                <div>
+                  <div class="fw-bold" style="color:var(--navy);font-size:.92rem">Ana Lúcia S.</div>
+                  <div style="font-size:.8rem;color:#7A8CA0">Prestadora de serviços • Goiânia/GO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="review-card">
+              <i class="bi bi-quote quote"></i>
+              <div class="stars">★★★★★</div>
+              <p>“Departamento pessoal impecável. Folha, férias, rescisão — tudo resolvido sem correria. O suporte por WhatsApp faz muita diferença no dia a dia.”</p>
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <div class="avatar">JP</div>
+                <div>
+                  <div class="fw-bold" style="color:var(--navy);font-size:.92rem">João Paulo F.</div>
+                  <div style="font-size:.8rem;color:#7A8CA0">Indústria • Aparecida de Goiânia/GO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="review-card">
+              <i class="bi bi-quote quote"></i>
+              <div class="stars">★★★★★</div>
+              <p>“Profissionais sérios, transparentes e que realmente se importam com o cliente. Recebo relatórios claros todo mês e consigo tomar decisões melhores.”</p>
+              <div class="d-flex align-items-center gap-3 mt-3">
+                <div class="avatar">CS</div>
+                <div>
+                  <div class="fw-bold" style="color:var(--navy);font-size:.92rem">Camila R.</div>
+                  <div style="font-size:.8rem;color:#7A8CA0">Clínica • Goiânia/GO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="pb-5">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h2 class="mb-2">Pronto para ter uma contabilidade sem preocupação?</h2>
+          <p class="mb-0" style="color:rgba(255,255,255,.82)">
+            Solicite uma proposta sem compromisso. Analisamos seu caso e mostramos exatamente
+            o que sua empresa precisa — com clareza e sem letras miúdas.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="https://wa.me/556232121200" class="btn btn-gold btn-lg w-100 w-lg-auto">
+            <i class="bi bi-whatsapp me-2"></i>Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTATO ==================== -->
+<section class="section bg-soft" id="contato">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Contato</span>
+      <h2 class="section-title">Fale com a Unica Contábil</h2>
+      <p class="section-sub mx-auto">
+        Estamos no Setor Bueno, em Goiânia – GO, e atendemos presencialmente e à distância.
+        Escolha o canal que preferir.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-telephone-fill"></i></div>
+          <h5 class="mb-1">Telefone</h5>
+          <p>Atendimento de segunda a sexta</p>
+          <a href="tel:+556232121200">(62) 3212-1200</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-envelope-fill"></i></div>
+          <h5 class="mb-1">E-mail</h5>
+          <p>Retornamos em até 24h úteis</p>
+          <a href="mailto:contato@unicacontabil.com">contato@unicacontabil.com</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 reveal">
+        <div class="contact-card">
+          <div class="ico"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5 class="mb-1">Endereço</h5>
+          <p>
+            Rua T53, 460 — Quadra 86, Lote 14/16, Andar 1<br>
+            Edifício Via Mutirão — Setor Bueno<br>
+            Goiânia – GO • CEP 74215-150
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua+T53+460+Setor+Bueno+Goiania+GO+74215-150"
+             target="_blank" rel="noopener">Ver no mapa <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-lg-7 reveal">
+        <div class="bg-white p-4 p-lg-5 rounded-4 border" style="border-color:#E8EEF6!important">
+          <h4 class="mb-1">Solicite seu orçamento</h4>
+          <p class="mb-4" style="color:#5A6B7D;font-size:.94rem">
+            Preencha os dados abaixo e nossa equipe entrará em contato.
+          </p>
+          <form onsubmit="return enviarFormulario(event)">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nome">Nome completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="empresa">Empresa (opcional)</label>
+                <input type="text" class="form-control" id="empresa" placeholder="Nome da empresa">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="voce@email.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="tel">Telefone / WhatsApp</label>
+                <input type="tel" class="form-control" id="tel" placeholder="(62) 9 0000-0000" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="msg">Como podemos ajudar?</label>
+                <textarea class="form-control" id="msg" rows="4" placeholder="Descreva sua necessidade"></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="lgpd" required>
+                  <label class="form-check-label" for="lgpd" style="font-size:.85rem;color:#5A6B7D">
+                    Li e concordo com a
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidade" class="fw-bold" style="color:var(--teal)">Política de Privacidade</a>
+                    e os
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalTermos" class="fw-bold" style="color:var(--teal)">Termos de Uso</a>.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-navy btn-lg w-100">
+                  <i class="bi bi-send-fill me-2"></i>Enviar solicitação
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="formOk" class="alert alert-success mt-3 d-none" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            Solicitação registrada! Entraremos em contato em breve.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 reveal">
+        <div class="bg-white p-4 rounded-4 border h-100" style="border-color:#E8EEF6!important">
+          <h5 class="mb-3"><i class="bi bi-info-circle-fill me-2" style="color:var(--teal)"></i>Dados de registro</h5>
+          <ul class="list-unstyled mb-4" style="font-size:.92rem;color:#4A5C6E">
+            <li class="mb-2"><strong style="color:var(--navy)">Razão Social:</strong><br>Unica Contabil S/S LTDA</li>
+            <li class="mb-2"><strong style="color:var(--navy)">CNPJ:</strong><br>51.013.220/0001-90</li>
+            <li class="mb-2"><strong style="color:var(--navy)">Endereço para correspondência:</strong><br>
+              Unica Contabil S/S LTDA<br>
+              Rua T53, 460 — Quadra 86, Lote 14/16, Andar 1<br>
+              Edifício Via Mutirão — Setor Bueno<br>
+              Goiânia – GO • CEP 74215-150
+            </li>
+          </ul>
+
+          <h5 class="mb-3"><i class="bi bi-clock-fill me-2" style="color:var(--gold)"></i>Horário de atendimento</h5>
+          <ul class="list-unstyled mb-4" style="font-size:.92rem;color:#4A5C6E">
+            <li class="d-flex justify-content-between border-bottom py-1"><span>Segunda a quinta</span><strong>08h – 18h</strong></li>
+            <li class="d-flex justify-content-between border-bottom py-1"><span>Sexta-feira</span><strong>08h – 17h</strong></li>
+            <li class="d-flex justify-content-between py-1"><span>Sábado e domingo</span><strong>Fechado</strong></li>
+          </ul>
+
+          <div class="p-3 rounded-3" style="background:rgba(14,149,148,.08)">
+            <p class="mb-1 fw-bold" style="color:var(--navy);font-size:.9rem">
+              <i class="bi bi-shield-lock-fill me-2" style="color:var(--teal)"></i>Seus dados estão seguros
+            </p>
+            <p class="mb-0" style="font-size:.84rem;color:#5A6B7D">
+              Tratamos suas informações conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="navbar-brand d-flex align-items-center mb-3" href="#top" style="color:#fff">
+          <span class="brand-icon"><i class="bi bi-calculator-fill"></i></span>
+          Unica<span style="color:var(--gold)">Contábil</span>
+        </a>
+        <p style="font-size:.92rem;max-width:320px">
+          Escritório de contabilidade em Goiânia – GO. Contabilidade, impostos, departamento
+          pessoal e consultoria para empresas e profissionais liberais.
+        </p>
+        <span class="cnpj-badge mt-2">CNPJ 51.013.220/0001-90</span>
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://wa.me/556232121200" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp fs-5"></i></a>
+          <a href="mailto:contato@unicacontabil.com" aria-label="E-mail"><i class="bi bi-envelope-fill fs-5"></i></a>
+          <a href="tel:+556232121200" aria-label="Telefone"><i class="bi bi-telephone-fill fs-5"></i></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua+T53+460+Setor+Bueno+Goiania+GO"
+             target="_blank" rel="noopener" aria-label="Localização"><i class="bi bi-geo-alt-fill fs-5"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#top">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#servicos">Abertura de empresa</a></li>
+          <li><a href="#servicos">Contabilidade mensal</a></li>
+          <li><a href="#servicos">Apuração de impostos</a></li>
+          <li><a href="#servicos">Departamento pessoal</a></li>
+          <li><a href="#servicos">Consultoria</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+        <h5>Contato</h5>
+        <ul>
+          <li><i class="bi bi-telephone-fill me-2"></i><a href="tel:+556232121200">(62) 3212-1200</a></li>
+          <li><i class="bi bi-envelope-fill me-2"></i><a href="mailto:contato@unicacontabil.com">contato@unicacontabil.com</a></li>
+          <li><i class="bi bi-geo-alt-fill me-2"></i>Rua T53, 460 — Setor Bueno<br><span style="margin-left:1.6rem">Goiânia – GO • 74215-150</span></li>
+        </ul>
+        <div class="d-flex flex-column gap-2 mt-3">
+          <button class="btn btn-sm btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">
+            <i class="bi bi-shield-lock-fill me-2"></i>Política de Privacidade
+          </button>
+          <button class="btn btn-sm btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#modalTermos">
+            <i class="bi bi-file-earmark-text-fill me-2"></i>Termos de Uso
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      © <span id="ano"></span> Unica Contabil S/S LTDA — Todos os direitos reservados. • CNPJ 51.013.220/0001-90 •
+      Rua T53, 460, Setor Bueno, Goiânia – GO, 74215-150
+    </div>
+  </div>
+</footer>
+
+<!-- Botão flutuante WhatsApp -->
+<a href="https://wa.me/556232121200" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- ============================================================
+     MODAL — POLÍTICA DE PRIVACIDADE
+============================================================ -->
+<div class="modal fade" id="modalPrivacidade" tabindex="-1" aria-labelledby="tituloPrivacidade" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloPrivacidade">
+          <i class="bi bi-shield-lock-fill me-2"></i>Política de Privacidade
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Última atualização:</strong> janeiro de 2025.</p>
+        <p>
+          A <strong>Unica Contabil S/S LTDA</strong>, inscrita no CNPJ nº <strong>51.013.220/0001-90</strong>,
+          com sede na Rua T53, 460, Quadra 86, Lote 14/16, Andar 1, Edifício Via Mutirão,
+          Setor Bueno, Goiânia – GO, CEP 74215-150, valoriza a sua privacidade e está comprometida
+          com a proteção dos seus dados pessoais, em conformidade com a
+          <strong>Lei nº 13.709/2018 (LGPD)</strong>.
+        </p>
+
+        <h6>1. Quais dados coletamos</h6>
+        <ul>
+          <li><strong>Dados de identificação e contato:</strong> nome, e-mail, telefone, empresa, cargo.</li>
+          <li><strong>Dados enviados por você:</strong> informações contidas em formulários, mensagens e documentos encaminhados para fins contábeis.</li>
+          <li><strong>Dados de navegação:</strong> endereço IP, tipo de dispositivo, navegador, páginas visitadas, data e hora de acesso.</li>
+          <li><strong>Dados fiscais e contábeis:</strong> documentos, notas fiscais, folha de pagamento e demais informações necessárias à prestação dos serviços contratados.</li>
+        </ul>
+
+        <h6>2. Como utilizamos os seus dados</h6>
+        <ul>
+          <li>Prestar os serviços contábeis contratados e cumprir obrigações legais e regulatórias;</li>
+          <li>Responder solicitações, orçamentos e dúvidas enviadas pelos canais de contato;</li>
+          <li>Enviar comunicações sobre prazos, obrigações e novidades relevantes;</li>
+          <li>Melhorar a experiência de navegação e a segurança do site;</li>
+          <li>Exercer direitos em processos administrativos, judiciais ou arbitrais.</li>
+        </ul>
+
+        <h6>3. Base legal</h6>
+        <p>
+          O tratamento dos dados é realizado com fundamento nas hipóteses legais previstas no art. 7º da LGPD,
+          especialmente: execução de contrato, cumprimento de obrigação legal ou regulatória,
+          legítimo interesse e consentimento do titular.
+        </p>
+
+        <h6>4. Compartilhamento de dados</h6>
+        <p>
+          Seus dados poderão ser compartilhados apenas quando necessário com: órgãos públicos
+          (Receita Federal, Secretarias da Fazenda, Previdência, Caixas de FGTS), prestadores de
+          serviços de tecnologia que apoiam nossa operação e autoridades competentes, sempre
+          mediante base legal. <strong>Não comercializamos dados pessoais.</strong>
+        </p>
+
+        <h6>5. Cookies</h6>
+        <p>
+          Utilizamos cookies e tecnologias semelhantes para melhorar a navegação e gerar
+          estatísticas de acesso. Você pode desativar os cookies nas configurações do seu navegador,
+          embora algumas funcionalidades possam ser afetadas.
+        </p>
+
+        <h6>6. Armazenamento e segurança</h6>
+        <p>
+          Adotamos medidas técnicas e administrativas para proteger os dados contra acessos não
+          autorizados, perda, alteração ou destruição. Os dados são armazenados pelo tempo
+          necessário ao cumprimento das finalidades e das obrigações legais, especialmente as
+          fiscais e contábeis.
+        </p>
+
+        <h6>7. Direitos do titular</h6>
+        <p>Você pode, a qualquer momento, solicitar:</p>
+        <ul>
+          <li>Confirmação da existência de tratamento e acesso aos dados;</li>
+          <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
+          <li>Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+          <li>Portabilidade dos dados, quando aplicável;</li>
+          <li>Informação sobre compartilhamentos realizados;</li>
+          <li>Revogação do consentimento.</li>
+        </ul>
+
+        <h6>8. Como exercer seus direitos</h6>
+        <p>
+          Envie sua solicitação para <strong>contato@unicacontabil.com</strong> ou pelo telefone
+          <strong>(62) 3212-1200</strong>. Responderemos no prazo previsto na LGPD.
+        </p>
+
+        <h6>9. Alterações desta política</h6>
+        <p>
+          Esta Política de Privacidade pode ser atualizada a qualquer momento. Recomendamos a
+          consulta periódica. A data da última atualização estará sempre indicada no início do documento.
+        </p>
+
+        <h6>10. Contato do controlador</h6>
+        <p>
+          <strong>Unica Contabil S/S LTDA</strong><br>
+          CNPJ: 51.013.220/0001-90<br>
+          Rua T53, 460, Quadra 86, Lote 14/16, Andar 1, Edifício Via Mutirão<br>
+          Setor Bueno — Goiânia/GO — CEP 74215-150<br>
+          E-mail: contato@unicacontabil.com — Telefone: (62) 3212-1200
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-navy" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     MODAL — TERMOS DE USO
+============================================================ -->
+<div class="modal fade" id="modalTermos" tabindex="-1" aria-labelledby="tituloTermos" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloTermos">
+          <i class="bi bi-file-earmark-text-fill me-2"></i>Termos de Uso
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Última atualização:</strong> janeiro de 2025.</p>
+
+        <h6>1. Aceitação dos termos</h6>
+        <p>
+          Ao acessar e utilizar este site, você declara que leu, compreendeu e concorda com os
+          presentes Termos de Uso e com a Política de Privacidade da
+          <strong>Unica Contabil S/S LTDA</strong>, CNPJ nº <strong>51.013.220/0001-90</strong>.
+          Caso não concorde, recomendamos que não utilize o site.
+        </p>
+
+        <h6>2. Objeto do site</h6>
+        <p>
+          Este site tem caráter <strong>informativo e institucional</strong>, destinado à divulgação
+          dos serviços contábeis prestados pela Unica Contábil e ao contato com potenciais clientes.
+        </p>
+
+        <h6>3. Ausência de relação profissional automática</h6>
+        <p>
+          O envio de mensagens, formulários ou o contato por meio deste site
+          <strong>não constitui, por si só, relação de prestação de serviços contábeis</strong>.
+          Qualquer contratação depende de proposta formal, aceite e assinatura de contrato específico.
+        </p>
+
+        <h6>4. Uso adequado</h6>
+        <p>O usuário compromete-se a:</p>
+        <ul>
+          <li>Utilizar o site apenas para finalidades lícitas;</li>
+          <li>Não inserir informações falsas, de terceiros sem autorização ou de conteúdo ilícito;</li>
+          <li>Não realizar tentativas de invasão, engenharia reversa, cópia automatizada ou qualquer ação que comprometa a segurança e o funcionamento do site;</li>
+          <li>Não utilizar o conteúdo para fins comerciais sem autorização expressa.</li>
+        </ul>
+
+        <h6>5. Propriedade intelectual</h6>
+        <p>
+          Todos os textos, marcas, logotipos, layout, imagens, ícones e demais elementos deste site
+          são de propriedade da Unica Contábil ou licenciados a ela, sendo protegidos pela
+          legislação de propriedade intelectual. É vedada a reprodução total ou parcial sem
+          autorização prévia e por escrito.
+        </p>
+
+        <h6>6. Informações e conteúdo</h6>
+        <p>
+          Os conteúdos publicados têm finalidade informativa e não substituem a análise
+          individualizada de cada caso. A legislação tributária e trabalhista é dinâmica,
+          de modo que as informações podem ficar desatualizadas.
+          <strong>A Unica Contábil não se responsabiliza por decisões tomadas exclusivamente
+          com base no conteúdo genérico deste site.</strong>
+        </p>
+
+        <h6>7. Links de terceiros</h6>
+        <p>
+          Este site pode conter links para páginas externas. Não nos responsabilizamos pelo
+          conteúdo, políticas ou práticas de sites de terceiros.
+        </p>
+
+        <h6>8. Limitação de responsabilidade</h6>
+        <p>
+          A Unica Contábil adota boas práticas para manter o site disponível e livre de erros,
+          porém não garante que o acesso será ininterrupto ou isento de falhas técnicas.
+          Não nos responsabilizamos por danos decorrentes de indisponibilidade temporária,
+          falhas de conexão, ataques cibernéticos ou uso indevido por parte do usuário.
+        </p>
+
+        <h6>9. Privacidade</h6>
+        <p>
+          O tratamento de dados pessoais realizado por meio deste site segue a nossa
+          Política de Privacidade e a Lei nº 13.709/2018 (LGPD).
+        </p>
+
+        <h6>10. Alterações</h6>
+        <p>
+          Estes Termos de Uso podem ser modificados a qualquer momento, sem aviso prévio.
+          A versão vigente será sempre a publicada neste site.
+        </p>
+
+        <h6>11. Legislação aplicável e foro</h6>
+        <p>
+          Estes Termos são regidos pelas leis brasileiras. Fica eleito o foro da Comarca de
+          <strong>Goiânia – Estado de Goiás</strong> para dirimir quaisquer controvérsias
+          decorrentes deste documento, com renúncia a qualquer outro, por mais privilegiado que seja.
+        </p>
+
+        <h6>12. Contato</h6>
+        <p>
+          <strong>Unica Contabil S/S LTDA</strong> — CNPJ 51.013.220/0001-90<br>
+          Rua T53, 460, Quadra 86, Lote 14/16, Andar 1, Edifício Via Mutirão<br>
+          Setor Bueno — Goiânia/GO — CEP 74215-150<br>
+          E-mail: contato@unicacontabil.com — Telefone: (62) 3212-1200
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-navy" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  /* Ano dinâmico */
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  /* Navbar com sombra ao rolar */
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* Fecha o menu mobile ao clicar em um link */
+  document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .btn').forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('navMenu');
+      if (menu.classList.contains('show')) {
+        new bootstrap.Collapse(menu).hide();
+      }
+    });
+  });
+
+  /* Animação de entrada (reveal) */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* Contador animado dos números */
+  const counters = document.querySelectorAll('[data-count]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.count;
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 60));
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current + (target >= 90 ? '+' : '');
+      }, 25);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => counterObserver.observe(c));
+
+  /* Envio do formulário (demonstrativo) */
+  function enviarFormulario(e) {
+    e.preventDefault();
+    document.getElementById('formOk').classList.remove('d-none');
+    e.target.reset();
+    setTimeout(() => document.getElementById('formOk').classList.add('d-none'), 6000);
+    return false;
+  }
+</script>
+</body>
+</html>
